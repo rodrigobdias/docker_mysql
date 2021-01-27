@@ -1,4 +1,8 @@
 # docker_mysql
 ==============
 
-Configuração do mysql em docker para uso em outros projetos.
+Mysql para uso em projetos diversos.
+
+```shell
+docker-compose up --build
+```
