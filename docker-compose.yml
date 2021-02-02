@@ -2,7 +2,10 @@ version: '3.3'
 
 services:  
   db:
-    image: mysql:5.7
+    build:
+      context: mysql/
+      args:
+        MYSQL_VERSION: $MYSQL_VERSION
     container_name: mysql_default
     restart: always
     ports:
